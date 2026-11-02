@@ -31,19 +31,21 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="grid min-h-screen lg:grid-cols-2">
-      <section className="flex items-center justify-center bg-white p-8">
-        <form onSubmit={onSubmit} className="w-full max-w-sm space-y-5">
+    <main className="grid min-h-screen bg-[#f7f8fc] lg:grid-cols-2">
+      <section className="relative flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-white to-violet-50/60 p-6 sm:p-10">
+        <div className="pointer-events-none absolute -left-32 top-1/4 h-72 w-72 rounded-full bg-indigo-100/60 blur-3xl" />
+        <form onSubmit={onSubmit} className="page-transition relative w-full max-w-sm space-y-6">
           <div className="flex items-center gap-3">
-            <span className="grid h-11 w-11 place-items-center rounded-xl bg-navy-700 text-white"><GraduationCap size={22} /></span>
+            <span className="grid h-12 w-12 place-items-center rounded-2xl bg-gradient-to-br from-navy-800 to-violet-700 text-white shadow-lg shadow-violet-200"><GraduationCap size={23} /></span>
             <div>
               <p className="text-sm font-semibold text-navy-800">Bharathi Institute of Technology</p>
               <p className="text-xs text-slate-500">Department of Computer Applications</p>
             </div>
           </div>
           <div>
-            <h1 className="text-2xl font-semibold text-navy-900">MCA Student Feedback Portal</h1>
-            <p className="mt-1 text-sm text-slate-500">Welcome back. Sign in to share feedback on your courses and faculty.</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-violet-600">Student workspace</p>
+            <h1 className="text-3xl font-semibold tracking-tight text-navy-900">Welcome back</h1>
+            <p className="mt-2 text-sm leading-6 text-slate-500">Sign in to share feedback on your courses and faculty.</p>
           </div>
           <label className="block text-sm font-medium">Register number
             <input name="registerNumber" required placeholder="MCA2026001" className="input mt-1.5" autoComplete="username" />
@@ -69,14 +71,18 @@ export default function LoginPage() {
           <p className="text-center text-sm text-slate-500">Trouble signing in? <a href="/support" className="text-royal-600 hover:underline">Contact support</a></p>
         </form>
       </section>
-      <section className="relative hidden overflow-hidden bg-navy-900 p-12 text-white lg:flex lg:flex-col lg:justify-center">
-        <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-royal-500/30 blur-3xl" />
-        <div className="relative max-w-md space-y-6">
-          <h2 className="text-3xl font-semibold leading-snug">Your feedback shapes the next MCA batch.</h2>
-          <p className="text-navy-100">Rate faculty, review courses and report campus issues. Responses stay anonymous to faculty.</p>
+      <section className="relative hidden overflow-hidden bg-gradient-to-br from-[#101932] via-[#202459] to-[#5536a2] p-12 text-white lg:flex lg:flex-col lg:justify-center xl:p-20">
+        <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-violet-400/25 blur-3xl" />
+        <div className="absolute -bottom-28 -left-24 h-80 w-80 rounded-full bg-blue-400/15 blur-3xl" />
+        <div className="absolute right-16 top-16 h-36 w-36 rounded-full border border-white/[0.08]" />
+        <div className="absolute right-24 top-24 h-20 w-20 rounded-full border border-white/[0.08]" />
+        <div className="relative max-w-lg space-y-7">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.08] px-3 py-1.5 text-xs font-medium text-violet-100"><MessageSquareText size={14} /> A better campus starts with you</span>
+          <h2 className="text-4xl font-semibold leading-tight tracking-tight xl:text-5xl">Your feedback shapes the next MCA batch.</h2>
+          <p className="max-w-md text-sm leading-7 text-indigo-100/80">Rate faculty, review courses and share campus ideas. Your thoughtful feedback helps make every semester better.</p>
           <div className="space-y-3 text-sm">
-            <p className="flex items-center gap-3"><Code2 size={18} className="text-royal-100" /> Semester IV: Python, Web Technologies, Cloud, ML</p>
-            <p className="flex items-center gap-3"><MessageSquareText size={18} className="text-royal-100" /> Three feedback forms are waiting for you</p>
+            <p className="flex items-center gap-3"><Code2 size={18} className="text-violet-200" /> Semester IV: Python, Web Technologies, Cloud, ML</p>
+            <p className="flex items-center gap-3"><MessageSquareText size={18} className="text-violet-200" /> Your voice makes a difference</p>
           </div>
         </div>
       </section>
