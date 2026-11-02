@@ -1,6 +1,3 @@
 import type { NextConfig } from "next";
-const nextConfig: NextConfig = {
-  reactStrictMode: true,
-  distDir: process.env.NEXT_BUILD_DIST_DIR || ".next",
-};
+const nextConfig: NextConfig = { reactStrictMode: true };
 export default nextConfig;
