@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/course-feedback/layout,_N_T_/course-feedback/page,_N_T_/course-feedback"
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/64abd0c1800b9f1fabfac10f3438c5cea839b0b0f014778e13bad066aec36d8c/$/course-feedback",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/course-feedback/page"
+    },
+    "isFallback": false
+  }
+}

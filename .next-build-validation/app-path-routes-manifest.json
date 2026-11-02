@@ -1,0 +1,20 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/auth/login/route": "/api/auth/login",
+  "/api/auth/logout/route": "/api/auth/logout",
+  "/api/auth/register/route": "/api/auth/register",
+  "/api/faculty/route": "/api/faculty",
+  "/api/feedback/route": "/api/feedback",
+  "/api/subjects/route": "/api/subjects",
+  "/course-feedback/page": "/course-feedback",
+  "/faculty-feedback/page": "/faculty-feedback",
+  "/general-feedback/page": "/general-feedback",
+  "/login/page": "/login",
+  "/page": "/",
+  "/signup/page": "/signup",
+  "/faculty/page": "/faculty",
+  "/feedback-history/page": "/feedback-history",
+  "/profile/page": "/profile",
+  "/subjects/page": "/subjects",
+  "/dashboard/page": "/dashboard"
+}
